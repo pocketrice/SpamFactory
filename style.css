@@ -1,0 +1,89 @@
+/*body {
+  /*text-align:center;
+  //background-image: linear-gradient(to top, hsl(182, 96%, 20%),hsl(182, 74%, 79%));
+  opacity:0.9; Moved to index.html
+  
+}*/
+
+
+div#unblur {
+   backdrop-filter: blur(0px);
+}
+
+div#blur {
+   backdrop-filter: blur(5px);
+}
+
+.number {
+  text-align:center;
+}
+.text1 {
+  border: 13px solid hsl(22, 85%, 40%);
+  border-inline-start-color: hsl(22, 80%, 30%);
+  border-inline-end-color: hsl(22, 80%, 30%);
+  background-color: hsl(22, 70%, 62%);
+  margin:auto;
+  padding: 10px;
+  width:500px;
+  height:100px;
+  font-size: medium;
+}
+
+.debug {
+  font-size: 13px;
+  color:mediumseagreen
+}
+
+#autoDisplay {
+  font-size: 13px;
+  color:hsl(189, 63%, 30%);
+  margin-bottom: 10px;
+}
+
+.clock {
+  border: 8px solid hsl(189, 59%, 30%);
+  border-inline-start-color: hsl(189, 64%, 21%);
+  border-inline-end-color: hsl(189, 63%, 21%);
+  background-color:hsl(189, 48%, 58%);
+  width:100px;
+  height:25px;
+  text-align:center;
+  margin:auto;
+  font-size:larger;
+}
+
+#debugSandbox { 
+  /*border: 8px solid lightcyan;*/
+  padding: 1px;
+  font-size: small;
+}
+
+.gradient {
+  background-color:cadetblue; 
+
+  background-image: linear-gradient(cadetblue, lightcyan);
+}
+
+a:link {
+  color: rgb(143, 240, 243);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(206, 230, 231);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(39, 182, 187);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(31, 205, 211);
+  background-color: transparent;
+  text-decoration: underline;
+}

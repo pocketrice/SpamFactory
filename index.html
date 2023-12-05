@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<h1> SPAM Factory <h1> Logo still work in progress-->
+    <img src="https://i.postimg.cc/FHWZYBwy/Spam-Factory-Logo-2.png" alt="SPAM Factory" width="300" height="40">
+
+    <p id='flavortext'><b>No flavors loaded! :[</b></p>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery things-->
+   
+   
+   <br>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>SPAM Factory</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+    <style>
+    
+    html {
+      height: 100%;
+    }
+
+  /* TODO: fix internal style CSS if needed? */
+    #gradient {
+      text-align:center;
+      background-image: linear-gradient(to top, hsl(182, 96%, 20%),hsl(182, 74%, 79%));
+      opacity:0.9;
+    }
+
+
+
+   </style>
+  
+  </head>
+  
+  <script src="flavor.js"></script>
+  <script src="Alert.js"></script>
+  <script src="Update.js"></script>
+  <body onload="flavor(); autoSpam(); clock(); setInterval('clock()', 1000 ); setInterval('autoSpam()', 1000)"> <!-- Note: 1000 = 1 second-->
+
+    
+    <p1 id="demo"></p1>
+    <br><p3 id="autoDisplay" style="display:none"></p3><p3>&nbsp;</p3>
+
+     <body id="gradient"></body>
+      <div class="Box">
+    <script src="Points.js"></script>
+    <script src="Stats.js"></script>
+    <input type="button" onclick="points()" value= "Make Spam">
+  
+    <input type="button" onclick="save()" value = "Mix Inferior Meat">
+
+    <input type="button" onclick="build()" value = "Build a Factory">
+    
+    <script src="Points.js"></script>
+    <input type="button" onclick="automate()" value="Automate Process">
+
+    <br><script src="Event.js"></script>
+    <input type="button" onclick="query()" value="Inquiry">
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="invest()" value="Invest">
+
+    <!--<script src="Event.js"></script>
+    <input type="button" onclick="invLeft()" value="<">
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="invRight()" value=">">-->
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="order()" value="Order">
+
+    <script src="Update.js"></script>
+    <input type="button" onclick="autoToggle()" value="Automator" id="autoToggle" style="display:none">
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="info()" value = "?">
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="debugMode()" value = "Debug Mode">
+    
+  <span style="display:block" id="debugGap2">
+  <br>
+
+  </span>
+    
+<span style="display:none" id="debugMode">
+    <br><script src="Event.js"></script>
+    <input type="button" onclick="cheat()" value = "Debug Cheat" class="debug"/> <!--Debug button-->
+    
+    <script src="flavor.js"></script>
+    <input type="button" onclick="flavor()" value = "Flavor!" class="debug"/> <!--Debug button-->
+
+    <script src="Alert.js"></script>
+    <input type="button" onclick="blur()" value = "Blur" class="debug"/> <!--Debug button-->
+
+    <script src="Alert.js"></script>
+    <input type="button" onclick="unblur()" value = "Unblur" class="debug"/> <!--Debug button-->
+
+    <script src="Update.js"></script>
+    <input type="button" onclick="advAuto()" value = "Adv. Automator" class="debug"/> <!--Debug button-->
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="instantSpam()" value = "Instant Spam" class="debug"/> <!--Debug button-->
+
+    <script src="Event.js"></script>
+    <input type="button" onclick="demoMode()" value = "Demo Mode" class="debug"/> <!--Debug button-->
+  
+    </span>
+
+    <script type="text/javascript" src="Event.js"></script>
+    <script type="text/javascript" src="Update.js"></script>
+    <script type="text/javascript" src="Points.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <div>
+    <!--<p id="count"><b>Total SPAM:</b> null</p> WIP, visual indicator will be an 'Advancement' upgrade -->
+    </div>
+
+    <div class="text1" id="blur">
+    <br><p1>The cost of mixing inferior meat starts at 11 spam and increases by 10 cans and 1.2x everytime you purchase this upgrade.</p1>
+    <br><p1>The cost of building a factory starts at 100 spam and adds 100 more spam to the cost everytime you purchase this upgrade. </p1>
+    </div>
+     
+  <div style="display:none" id="debugSandbox">
+  <br><h3><p3>The debug sandbox can be used for advanced testing. Continue?</h3>
+
+  <script src="Event.js"></script>
+  <input type="checkbox" onclick="allowDebug()" id="debugCheck">
+
+  <script src="Event.js"></script>
+  <input type="button" onclick="transferDebug()" value="Onwards">
+  </div>
+
+<span style="display:block" id="debugGap">
+<br>
+<br>
+<br>
+<br>
+</span>
+
+<br>
+<br>
+<br>
+  <div class="clock">
+  <span id="clock"> &nbsp; </span>
+  </div>
+
+      <div>
+      <br>
+  
+     <p> <a href="https://Micro-nation-simulator.jianyaoxu.repl.co" target="_blank">Micronation Simulator</a> | <a href="https://Graphing-calculator.jianyaoxu.repl.co" target="_blank">Advanced Calculator</a> | <a href="https://Lando-Simulator-10.jianyaoxu.repl.co" target="_blank">Lando Simulator</a><span style="display:none" id="debugLinks"> | <a href="https://pocketrice.trinket.io/sites/spam-factory-demo" target="_blank">Demo</a> | <a href="https://github.com/PocketRice/Lando-Simulator" target="_blank">Github</a> | <a href="https://repl.it/@JianyaoXu" target="_blank">Repls</a></span></p> 
+      </div>
+  
+  
+
+  <script>
+  function points() {
+  potential = Number(1 + Number(meat)) * Number(factories);
+
+  pastSpam = totalSpam;
+
+  totalSpam = Number(1 + Number(meat)) * Number(factories) + totalSpam;
+
+  if (totalSpam <= 0)
+  { 
+     debt = Math.abs(Number(totalSpam))
+  }
+  
+  
+  
+
+  if (debt > 0)
+  {
+    x = ("You made " + Number(potential) + " cans of spam! You now have 0 spam cans and have " + debt + " cans in debt left.");
+  }
+  else
+  {
+     x = ("You made " + Number(potential) + " cans of spam! You now have " + Number(totalSpam) + " spam cans.");
+  }
+ 
+  document.getElementById("demo").innerHTML = "<b>" + x + "</b>";
+
+  if ((pastSpam < 0) && (totalSpam >= 0))
+  {
+    alert("Debt has been paid off!")
+  }
+  
+  manualTotalSpam = manualTotalSpam + potential;
+  }
+  // This is the button for spam production.
+
+  </script>
+  
+  
+  </html>
+  </body>
+</html>
