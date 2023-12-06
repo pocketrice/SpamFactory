@@ -19,7 +19,7 @@
   <br>
 <em>The original highly-processed luncheon meat you know and love, packaged in a cleaner, nicer, and expanded can.</em> 
 <br><br>
-Simple clicker-style web game based on only one premise: making as much SPAM as you can. Features investment system, stats tracking, and clock. A neat "first website", if you can call it that. This repo will host both Spam Factory Classic (the original experience) and Spam Factory Recanned (reimagining based on our two-year-old plans collecting dust in the corner).
+Simple clicker-style web game based on only one premise: making as much SPAM as you can. Features investment system, stats tracking, and clock. This repo will host both Spam Factory Classic (the original experience) and Spam Factory Recanned (reimagining based on our two-year-old plans collecting dust in the corner). <br><br>Classic is understandably far less polished, but decent for a "first website", I s'pose?
 
   
   <br><br>
